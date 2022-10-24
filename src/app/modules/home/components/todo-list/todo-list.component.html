@@ -13,4 +13,5 @@
 
 </section>
 <app-todo-input-add-itens (emmitItemTaskList)="setEmitTaskList($event)"></app-todo-input-add-itens>
+<!-- emitItemTaskList é um evento q foi capturado , para recuperar usamos o setEmittaskList-->
 <app-todo-button-delete-all *ngIf="taskList.length" (click)="deleteAll()"></app-todo-button-delete-all>
