@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-todo-button-delete-all',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoButtonDeleteAllComponent implements OnInit {
 
+
+ 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+ 
 }

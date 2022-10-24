@@ -1,1 +1,5 @@
-<input type="text" placeholder="Digite sua nova task aqui...">
+<input type="text" 
+placeholder="Digite sua nova task aqui..."
+[(ngModel)]="addItemTaskList" 
+(keyup.enter)="submitItemTaskList()">  
+<!-- keyup.enter : faz com q ao apertar o enter apareça algo no console -->

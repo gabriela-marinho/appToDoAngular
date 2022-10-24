@@ -31,4 +31,9 @@ export class TodoListComponent implements OnInit {
     }
 
   }
+
+  public setEmitTaskList(event:string){
+    console.log(event);
+    this.taskList.push({task:event, checked:false})
+  }
 }
