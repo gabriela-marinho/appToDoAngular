@@ -19,6 +19,8 @@ export class TodoListComponent implements DoCheck {
   //esse docheck diz q sempre q esse component tiver alguma reatividade ele vai "trigar" alguma coisa
   ngDoCheck() {
     this.taskList.sort()
+    //localStorage só aceita string preciso transformar um array de objetos para string
+    localStorage.setItem("list",JSON.stringify(this.taskList))
     //o sort ordena meu array
   }
 
